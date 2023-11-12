@@ -285,11 +285,11 @@ void Lddc::InitPointcloud2MsgHeader(PointCloud2& cloud) {
   cloud.fields[4].count = 1;
   cloud.fields[4].datatype = PointField::UINT8;
   cloud.fields[5].offset = 17;
-  cloud.fields[5].name = "line";
+  cloud.fields[5].name = "ring";  // changed from "line"
   cloud.fields[5].count = 1;
   cloud.fields[5].datatype = PointField::UINT8;
   cloud.fields[6].offset = 18;
-  cloud.fields[6].name = "timestamp";
+  cloud.fields[6].name = "time";  // changed from "timestamp"
   cloud.fields[6].count = 1;
   cloud.fields[6].datatype = PointField::FLOAT64;
   cloud.point_step = sizeof(LivoxPointXyzrtlt);
